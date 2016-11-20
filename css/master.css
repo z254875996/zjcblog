@@ -12,10 +12,44 @@ a { text-decoration:none; color:#5c76d5;}
 a:hover { text-decoration:underline; color:#f50;}
 table { border-spacing:0; border-collapse:collapse;}
 
+/*通用*/
+.hide {display: none;}
+.flt {float:left;}
+.frt {float:right;}
+.pl10 {padding-left: 10px;}
+.pl15 {padding-left: 15px;}
+.pr15 {padding-right: 12px;}
+.pl50 {padding-left: 50px;}
+.pl120 {padding-left: 120px;}
+.mt5 {margin-top: 5px;}
+.mt15 { margin-top: 15px;}
+.mt20 {margin-top: 20px;}
+.mt80 {margin-top: 80px;}
+.ml20 {margin-left: 20px;}
+.mb20 {margin-bottom: 20px;}
+.mb15 {margin-bottom: 15px;}
+.red {color: #f00;}
+.green {color: #6c0;}
+.blue {color: #09c;}
+a.blue {color: #5c76d5;}
+a.blue:hover {color: #f50;}
+.fw {font-weight: bold; }
+.whitebg {background: #fff;}
+.bodybg{background: #faf5f1;}
+.curmenu {background: #47eb94;}
+.clear { clear: both;}
+.clearfix { *zoom: 1;} 
+.clearfix:before, .clearfix:after { display: table; line-height: 0; content: "";}
+.clearfix:after { clear: both;}
+
 /*代码开始*/
 * {
     margin: 0;
     padding: 0;
+}
+i{
+    margin-right: 5px;
+    color: #b5b7be;
 }
 .body-middle > p{
     text-align: center;
@@ -41,7 +75,6 @@ table { border-spacing:0; border-collapse:collapse;}
 .header {
     width: 960px;
     height: 100px;
-    background-color: black;
     color: aliceblue;
     text-align: center;
     line-height: 100px;
@@ -54,23 +87,61 @@ table { border-spacing:0; border-collapse:collapse;}
     color: aliceblue;
 }
 .header-nav {
-    width: 500px;
+    width: 630px;
     height: 100px;
     float: left;
+    position: relative;
 }
 .header-nav ul li {
+    width: 60px;
+    height: 30px;
     float: left;
-    margin-left: 70px;
+    color: #FFF;
+    margin-top: 50px;
+    margin-left: 90px;
     font-size: 16px;
-    line-height: 130px;
-    color: aliceblue;
+    line-height: 30px;
 }
 .header-nav ul li:hover {
     text-decoration: none;
-    color: #19a2de;
+    color: #4545f5;
+}
+.header-nav-Hidden-wenzhang{
+    width: 100px;
+    height: 200px;
+    display: none;
+    background-color: #FFF;
+    border-radius: 5px;
+    position: absolute;
+    top: 75px;
+    left: 335px;
+    z-index: 1;
 }
 /*这是主体*/
-
+.click{
+    width: 950px;
+    height: 30px;
+    position: absolute;
+    top: -50px;
+    left: 0;
+    margin-left: 5px;
+    background-color: #2f2feb; 
+}
+.click>i{
+    margin-left: 475px;
+    color: #b5b7be;
+}
+.Hidden_box{
+    width: 950px;
+    height: 640px;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 5px;
+    background-color: aqua;
+    z-index: 1;
+}
 .body {
     width: 960px;
     height: 640px;
@@ -97,6 +168,7 @@ table { border-spacing:0; border-collapse:collapse;}
     height: 150px;
     background-color: #7f7f7f;
     float: left;
+    
 }
 /*集体属性*/
 .texiao{
@@ -168,7 +240,7 @@ background: -webkit-gradient(linear,left top,left bottom,from(#fdbb5a), to(#db57
 background: -moz-linear-gradient(top,#fdbb5a,#db5726);
 width: 150px;
 height: 150px;
-line-height: 150px;
+line-height: 150px;  
 }
 
 

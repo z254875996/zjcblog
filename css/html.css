@@ -1,0 +1,202 @@
+@charset "utf-8";
+/*重置样式*/
+body,div,p,ul,ol,dl,dt,dd,li,form,input,table,th,td,img,h1,h2,h3,h4,h5,h6 { margin: 0;padding: 0;}
+
+body { background: #FFF; color: #000; font-size: 12px; font-style: normal; font-family:'Microsoft Yahei','微软雅黑','Simsun','宋体','Arial', sans-serif;}
+address,caption,dfn,th,var,cite,code,i,em,s,label,input,select,textarea{font-style:normal;font-weight:normal;font-family:inherit;}
+input[type="submit"],input[type="reset"],input[type="button"]{cursor:pointer;}
+select,input,textarea{font-family:inherit;margin:0;}
+li { list-style:none;}
+img { border:none; background:none;}
+a { text-decoration:none; color:#FFF;}
+a:hover { text-decoration:none; color:#FFF;}
+table { border-spacing:0; border-collapse:collapse;}
+
+/*通用*/
+.hide {display: none;}
+.flt {float:left;}
+.frt {float:right;}
+.pl10 {padding-left: 10px;}
+.pl15 {padding-left: 15px;}
+.pr15 {padding-right: 12px;}
+.pl50 {padding-left: 50px;}
+.pl120 {padding-left: 120px;}
+.mt5 {margin-top: 5px;}
+.mt15 { margin-top: 15px;}
+.mt20 {margin-top: 20px;}
+.mt80 {margin-top: 80px;}
+.ml20 {margin-left: 20px;}
+.mb20 {margin-bottom: 20px;}
+.mb15 {margin-bottom: 15px;}
+.red {color: #f00;}
+.green {color: #6c0;}
+.blue {color: #09c;}
+a.blue {color: #5c76d5;}
+a.blue:hover {color: #f50;}
+.fw {font-weight: bold; }
+.whitebg {background: #fff;}
+.bodybg{background: #faf5f1;}
+.curmenu {background: #47eb94;}
+.clear { clear: both;}
+.clearfix { *zoom: 1;} 
+.clearfix:before, .clearfix:after { display: table; line-height: 0; content: "";}
+.clearfix:after { clear: both;}
+
+/*代码开始*/
+* {
+    margin: 0;
+    padding: 0;
+}
+#audio{
+    width: 250px;
+    height: 30px;
+    position: fixed;
+    top: 20px;
+    left: 50px;
+    border-radius: 30px;
+    opacity: 0.5;
+}
+i{
+    margin-right: 5px;
+    color: #b5b7be;
+}
+.body-middle > p{
+    text-align: center;
+    line-height: 25px;
+}
+.beijing {
+    background: url(../images/beijing-header.jpg);
+}
+.big {
+    width: 950px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+/*清除浮动*/
+.clearfix:before,
+.clearfix:after{
+    clear: both;
+    content: "";
+    display: table;
+}
+/*这是头部*/
+
+.header {
+    width: 960px;
+    height: 100px;
+    color: aliceblue;
+    text-align: center;
+    line-height: 100px;
+    position: relative;
+}
+.header-logo {
+    width: 300px;
+    height: 100px;
+    font-size: 60px;
+    float: left;
+    color: aliceblue;
+}
+/*导航*/
+.nav{
+    width: 550px;
+    height: 44px;
+    background-color: #107ede;
+    position: absolute;
+    top: 30px;
+    left: 400px;
+}
+.nav li{
+    width: 50px;
+    height: 44px;
+    float: left;
+    margin: 0 43px;
+    text-align: center;
+    line-height: 44px;
+    position: relative;
+}
+.nav .m{
+    position:relative;
+    float:left;
+    display:inline;
+    text-align:center;
+}
+.nav .sub{
+    display:none;
+    width:108px; 
+    padding:10px 0;
+    position:absolute;
+    left:-25px; 
+    top:44px;
+    background:#eee;
+    float:left; 
+    line-height:30px; 
+    z-index: 1;
+}
+.nav .sub li{ 
+    text-align:center;
+    width: 108px;
+    margin: 10px 0;
+}
+.nav .sub li a{
+    color:#333;
+    display:block;
+    zoom:1;
+}
+.nav .sub li a:hover{
+    background:#7f7f7f; 
+    color:#FFF;
+}
+/*html页面的代码*/
+.containe{
+    width: 100%;
+    background-color: #FFF;
+    box-shadow: 2px 4px 6px #000;
+}
+h2{
+    color: #34b8e0;
+    margin: 10px;
+}
+.top{
+    width: 280px;
+    height: 600px;
+    background-color: #107ede;
+    position:absolute;
+    top: 180px;
+    right: 330px;
+}
+.top-header{
+    width: 280px;
+    height: 40px;
+    background-color: #FFF;
+    text-align: center;
+    line-height: 40px;
+}
+h3{
+    color: #fff;
+}
+.textbox{
+    width: 600px;
+    height: 150px;
+    margin: 30px;
+    border: #98959b solid 1px;
+}
+.text-img{
+    widows: 100px;
+    height: 100px;
+    float: left;
+}
+.span-box{
+    width: 470px;
+    height: 100px;
+    margin-left: 120px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #777;
+}
+
+
+
+
+
+
+
